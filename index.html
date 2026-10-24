@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2485">
+  <meta name="description" content="Explore PULSE, a proposed business early-warning platform. An interactive demonstration using fictional business information.">
+  <title>PULSE - Spot Risk. Act Early.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/poppins-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/poppins-semibold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#demo">Skip to interactive demo</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="m9 15 6-6m-5-3 2-2a5 5 0 0 1 8 8l-2 2M6 10l-2 2a5 5 0 0 0 8 8l2-2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m10.3 4-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3l-8-14a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4m0 4h.01"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8zM14 3v5h5M8 12h8m-8 4h6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m4 10v-3a6 6 0 0 0-3-5"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-10m-6 0h6v6"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 8V5H5a2 2 0 0 0 0 4h16v11H5a2 2 0 0 1-2-2V7m18 6h-6v4h6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  </defs></svg>
+  <header class="site-header">
+    <div class="nav-inner wrap">
+      <a href="#top" class="brand" aria-label="PULSE home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>PULSE<span class="brand-tagline">Spot Risk. Act Early.</span></a>
+      <button class="icon-button menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><svg class="icon"><use href="#i-menu"/></svg></button>
+      <nav id="site-nav" aria-label="Main navigation"><a href="#demo" class="active">Demo</a><a href="#how-it-works">How It Works</a><a href="#pricing">Pricing</a><a href="#why-pulse">Why PULSE</a><a href="#demo" class="button primary jump-demo">See PULSE in Action <svg class="icon"><use href="#i-arrow"/></svg></a></nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div><p class="eyebrow">Business early-warning platform</p><h1 id="hero-title">Know what needs attention<br class="desktop-break"> across your business.</h1></div>
+      <div class="hero-copy"><p>PULSE brings connected business information together to highlight emerging risks, explain what changed and recommend what to do next.</p><a href="#demo" class="text-link jump-demo">Explore the interactive demo <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+    </section>
+
+    <section id="demo" class="demo-wrap wrap" aria-label="Interactive PULSE dashboard">
+      <div class="demo-topline"><span><span class="status-dot"></span> Your business, in perspective.</span><span class="demo-badge">Illustrative Demo Data</span></div>
+      <div class="dashboard">
+        <aside class="sidebar" aria-label="Dashboard navigation">
+          <div class="sidebar-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>PULSE</div>
+          <p class="workspace-label">WORKSPACE</p>
+          <nav aria-label="Dashboard sections">
+            <a class="selected" href="#overview"><svg class="icon"><use href="#i-grid"/></svg><span>Overview</span></a>
+            <a href="#signals"><svg class="icon"><use href="#i-pulse"/></svg><span>Signals</span><span class="nav-count">4</span></a>
+            <a href="#risk-details"><svg class="icon"><use href="#i-shield"/></svg><span>Risk Details</span></a>
+            <a href="#actions"><svg class="icon"><use href="#i-doc"/></svg><span>Actions</span></a>
+            <a href="#connections"><svg class="icon"><use href="#i-link"/></svg><span>Connections</span></a>
+          </nav>
+          <div class="sidebar-note"><span class="mini-pulse"><svg class="icon"><use href="#i-pulse"/></svg></span><h3>A little clarity.<br>A better next step.</h3><p>Understand the signals.<br>You make the decisions.</p></div>
+          <div class="workspace-profile"><span class="avatar">A</span><div>Apex Creative Studio<small>Demo workspace</small></div></div>
+        </aside>
+
+        <div class="dashboard-main" id="overview">
+          <div class="dashboard-toolbar"><span class="breadcrumb">Workspace <span>/</span> Overview</span><span class="period-label"><svg class="icon"><use href="#i-clock"/></svg> Current vs previous period</span></div>
+          <div class="dashboard-heading"><div><h2>Apex Creative Studio</h2><p>Professional-services SME <span>•</span> 12 employees</p></div><div class="scenario-buttons"><button class="button quiet reset-demo" title="Restore all demo inputs"><svg class="icon"><use href="#i-reset"/></svg><span>Reset Demo</span></button><button id="scenario-button" class="button primary"><svg class="icon"><use href="#i-play"/></svg><span>Simulate Emerging Risk</span></button></div></div>
+          <div class="scenario-strip"><span id="scenario-label"><span class="status-dot"></span> Normal monitoring</span><span>Fictional inputs. Real product possibilities.</span></div>
+
+          <div id="risk-assessment" class="assessment normal" aria-live="polite" aria-atomic="true"></div>
+
+          <section id="signals" aria-labelledby="signals-title"><div class="panel-heading"><h3 id="signals-title">Key business signals</h3><span>Select a signal to explore <svg class="icon tiny"><use href="#i-chevron"/></svg></span></div><div id="kpi-grid" class="kpi-grid"></div></section>
+
+          <div class="dashboard-two-col">
+            <section id="risk-details" class="panel evidence-panel" aria-labelledby="evidence-title"><div class="panel-heading"><h3 id="evidence-title">The story behind the signals</h3><span id="evidence-count" class="small-badge">4 available signals</span></div><p id="evidence-intro" class="panel-description"></p><div id="evidence-list"></div><div class="evidence-footnote"><svg class="icon"><use href="#i-link"/></svg><span>Every observation traces back to a supplied source.</span></div></section>
+            <section id="connections" class="panel connections-panel" aria-labelledby="connections-title"><div class="panel-heading"><h3 id="connections-title">Connected systems</h3><span class="small-badge">Simulated</span></div><div id="source-list"></div><details id="coverage-details" class="coverage-details"><summary>Inspect data coverage <svg class="icon tiny"><use href="#i-chevron"/></svg></summary><div class="coverage-body"><p>Try removing a source. PULSE only assesses the information available.</p><label class="switch-row" for="accounting-toggle"><span>Accounting data</span><input type="checkbox" id="accounting-toggle" role="switch" checked><span class="switch" aria-hidden="true"></span></label><p id="coverage-message" class="coverage-message"></p></div></details></section>
+          </div>
+          <div class="dashboard-two-col bottom-row">
+            <section id="actions" class="panel actions-panel" aria-labelledby="actions-title"><div class="panel-heading"><h3 id="actions-title"><svg class="icon"><use href="#i-doc"/></svg> Recommended first actions</h3><span id="action-count" class="small-badge">Routine</span></div><div id="recommendation-list"></div><p class="action-footnote">Suggestions support your judgement. No action is taken automatically.</p></section>
+            <section class="panel activity-panel" aria-labelledby="activity-title"><div class="panel-heading"><h3 id="activity-title"><svg class="icon"><use href="#i-clock"/></svg> Recent activity</h3><span class="small-badge">Demo sequence</span></div><ol id="activity-list" class="activity-list"></ol><button id="analyst-button" class="analyst-button"><span class="analyst-avatar"><svg class="icon"><use href="#i-users"/></svg></span><span>Optional human perspective<small id="analyst-button-label">Explore Analyst Review</small></span><svg class="icon"><use href="#i-arrow"/></svg></button></section>
+          </div>
+          <div class="dashboard-footer"><span><svg class="icon tiny"><use href="#i-shield"/></svg> Your decisions stay yours.</span><span>All figures and activity are fictional.</span></div>
+        </div>
+      </div>
+      <p class="demo-caption"><svg class="icon"><use href="#i-play"/></svg><span><strong>Try the 60-second demo.</strong> Simulate a risk, explore the evidence, then review the suggested response.</span></p>
+    </section>
+
+    <section class="benefits wrap section-space" aria-labelledby="benefits-title"><div class="section-heading"><h2 id="benefits-title">Less noise. More understanding.</h2><p>A clearer view of what matters, and where to focus next.</p></div><div class="benefit-grid"><article><span class="feature-icon"><svg class="icon"><use href="#i-pulse"/></svg></span><h3>Spot Problems Early</h3><p>Notice important changes across the business before they become harder to manage.</p></article><article><span class="feature-icon"><svg class="icon"><use href="#i-link"/></svg></span><h3>Understand Why</h3><p>See which connected business indicators contributed to a warning.</p></article><article><span class="feature-icon"><svg class="icon"><use href="#i-check"/></svg></span><h3>Know What to Do Next</h3><p>Get recommended actions and optional human support when additional judgment is needed.</p></article></div></section>
+
+    <section id="how-it-works" class="process-section section-space"><div class="wrap"><div class="section-heading"><h2>From information to informed action.</h2><p>A simple, continuous loop. Always with the owner in control.</p></div><ol class="process"><li><span>01</span><h3>Connect</h3><p>Use existing business data.</p></li><li><span>02</span><h3>Monitor</h3><p>Track important changes.</p></li><li><span>03</span><h3>Warn</h3><p>Highlight meaningful patterns.</p></li><li><span>04</span><h3>Explain</h3><p>Show supporting evidence.</p></li><li><span>05</span><h3>Act</h3><p>Recommend next steps.</p></li><li><span>06</span><h3>Check</h3><p>Review whether things improve.</p></li></ol></div></section>
+
+    <section class="case-section wrap section-space" aria-labelledby="case-title"><div class="case-heading"><p class="eyebrow">The Apex Creative Studio example</p><h2 id="case-title">Separate signals.<br>A connected perspective.</h2><p>One change may have a simple explanation. Several changes together deserve a closer look.</p><button class="button primary case-simulate">Simulate Emerging Risk <svg class="icon"><use href="#i-arrow"/></svg></button></div><div class="case-story"><div class="case-signals" id="case-signals"></div><div class="story-connector"><span></span><svg class="icon"><use href="#i-arrow"/></svg><span>Connected observations</span></div><div class="case-warning" id="case-warning"></div><div class="case-response"><svg class="icon"><use href="#i-check"/></svg><p><strong>A practical first response</strong>Review collections, spending, qualified opportunities and customer dependence.</p></div><small>Fictional scenario. Figures are rounded where indicated; no outcome is guaranteed.</small></div></section>
+
+    <section id="pricing" class="pricing-section section-space"><div class="wrap"><div class="section-heading centre"><h2>The right level of perspective.</h2><p>Software monitoring, with human support when you need more.</p></div><div class="pricing-grid">
+      <article class="price-card" data-plan="monitor"><span class="plan-label">Continuous visibility</span><h3>PULSE Monitor</h3><p class="price">$249<span>/month</span></p><p class="plan-description">For small businesses wanting continuous early warning without regular human analyst support.</p><ul><li>Monitor connected business data.</li><li>Emerging-risk alerts.</li><li>Explain contributing changes.</li><li>Recommend initial actions.</li></ul><button class="button plan-button" data-select-plan="monitor" aria-pressed="false">Explore Monitor <svg class="icon"><use href="#i-arrow"/></svg></button></article>
+      <article class="price-card featured" data-plan="explorer"><span class="plan-label">Monitoring + human insight</span><h3>PULSE Explorer</h3><p class="price">$599<span>/month</span></p><p class="plan-description">For growing businesses wanting monitoring and regular analyst support.</p><ul><li>Everything in Monitor.</li><li>More connected systems.</li><li>Monthly analyst review.</li><li>Priority risk support.</li></ul><button class="button primary plan-button" data-select-plan="explorer" aria-pressed="false">Explore Explorer <svg class="icon"><use href="#i-arrow"/></svg></button></article>
+      <article class="price-card" data-plan="advisory"><span class="plan-label">A closer working relationship</span><h3>PULSE Advisory</h3><p class="price"><small>From </small>$1,499<span>/month</span></p><p class="plan-description">For businesses requiring more hands-on support with complex risk cases.</p><ul><li>Everything in Explorer.</li><li>Proactive analyst involvement.</li><li>Management reviews.</li><li>Support for more complex risk cases.</li></ul><button class="button plan-button" data-select-plan="advisory" aria-pressed="false">Explore Advisory <svg class="icon"><use href="#i-arrow"/></svg></button></article>
+    </div><div id="plan-detail" class="plan-detail" aria-live="polite"><svg class="icon"><use href="#i-users"/></svg><p>Select a plan to explore how its support would work.</p></div><p class="pricing-note">Proposed launch pricing, subject to pilot validation. Plans are not available for purchase in this demo.</p></div></section>
+
+    <section id="why-pulse" class="why-section wrap section-space"><div class="why-heading"><span class="feature-icon"><svg class="icon"><use href="#i-pulse"/></svg></span><h2>More than another<br>business dashboard.</h2><p>PULSE is designed to connect relevant business warning signs, explain what they mean and guide the next response.</p></div><div class="why-points"><article><svg class="icon"><use href="#i-link"/></svg><div><h3>Connected perspective</h3><p>Bring relevant information from multiple supplied business sources together.</p></div></article><article><svg class="icon"><use href="#i-shield"/></svg><div><h3>Evidence-based warnings</h3><p>See exactly which observations contributed to an alert.</p></div></article><article><svg class="icon"><use href="#i-users"/></svg><div><h3>Software with human judgment</h3><p>Continuous software monitoring, with additional human support available at higher service levels.</p></div></article></div></section>
+
+    <section class="final-cta wrap"><span class="brand-mark large" aria-hidden="true"><i></i><i></i><i></i><i></i></span><h2>Spot Risk. Act Early.</h2><p>Experience how PULSE could help turn business information<br class="desktop-break"> into earlier, clearer decisions.</p><div><a href="#demo" class="button primary jump-demo">See PULSE in Action <svg class="icon"><use href="#i-arrow"/></svg></a><button class="button quiet reset-demo">Reset Demo</button></div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#top">PULSE</a><span>A proposed business early-warning platform.</span><span>Presentation demo <span>•</span> Fictional data only</span></footer>
+
+  <dialog id="metric-dialog" class="metric-dialog" aria-labelledby="metric-dialog-title"><button class="icon-button dialog-close" aria-label="Close signal details"><svg class="icon"><use href="#i-close"/></svg></button><div id="metric-dialog-content"></div></dialog>
+  <dialog id="analyst-dialog" class="analyst-dialog" aria-labelledby="analyst-title"><div class="drawer-header"><span class="small-badge">Optional premium support</span><button class="icon-button dialog-close" aria-label="Close Analyst Review"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="analyst-content"></div></dialog>
+  <div class="sr-only" role="status" id="announcer"></div>
+  <noscript><div class="noscript-note">Enable JavaScript to use the interactive dashboard. PULSE is a presentation demo using fictional information.</div></noscript>
+</body>
+</html>
